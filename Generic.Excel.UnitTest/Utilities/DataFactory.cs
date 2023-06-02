@@ -19,28 +19,28 @@ namespace Generic.Excel.UnitTest.Utilities
         {
             return new Employee
             {
-                FirstName = Randomizer.RandomString(10),
-                LastName = Randomizer.RandomString(10),
-                BirthDate = Randomizer.RandomDate(new DateTime(1970, 01, 01), new DateTime(2000, 01, 01)),
-                LastConnexion = Randomizer.RandomDateTime(new DateTime(2000, 01, 01), new DateTime(2020, 01, 01)),
-                MaritalStatus = Randomizer.RandomEnum<MaritalStatus>(),
-                EmployeeID = Randomizer.Random(100),
-                IsSupervisor = allowNull ? Randomizer.RandomNullableBool() : Randomizer.RandomBool(),
-                SocialSecurityNumber = Randomizer.Random(123456789, 1234567890),
-                Points = Randomizer.Random(10M, 100M),
-                Salary = Randomizer.Random(10000, 30000),
-                Address = Randomizer.RandomString(30, 50),
-                Skills = Randomizer.RandomString(100, 120),
-                Department = allowNull ? Randomizer.RandomNullable<Department>(() => new Department // null or new Department
+                FirstName = Randomizer.String(10),
+                LastName = Randomizer.String(10),
+                BirthDate = Randomizer.Date(new DateTime(1970, 01, 01), new DateTime(2000, 01, 01)),
+                LastConnexion = Randomizer.DateTime(new DateTime(2000, 01, 01), new DateTime(2020, 01, 01)),
+                MaritalStatus = Randomizer.Enumeration<MaritalStatus>(),
+                EmployeeID = Randomizer.Int(100),
+                IsSupervisor = allowNull ? Randomizer.NullableBoolean() : Randomizer.Boolean(),
+                SocialSecurityNumber = Randomizer.Int(123456789, 1234567890),
+                Points = Randomizer.Decimal(10M, 100M),
+                Salary = Randomizer.Int(10000, 30000),
+                Address = Randomizer.String(30, 50, StringCharacterType.UppercaseAlphaNumeric),
+                Skills = Randomizer.String(100, 120),
+                Department = allowNull ? Randomizer.Nullable<Department>(() => new Department // null or new Department
                 {
-                    ShortName = Randomizer.RandomString(7),
-                    FullName = Randomizer.RandomString(20),
-                    TeamSize = Randomizer.Random(11, 200),
+                    ShortName = Randomizer.String(7),
+                    FullName = Randomizer.String(20),
+                    TeamSize = Randomizer.Int(11, 200),
                 }) : new Department // null or new Department
                 {
-                    ShortName = Randomizer.RandomString(7),
-                    FullName = Randomizer.RandomString(20),
-                    TeamSize = Randomizer.Random(11, 200),
+                    ShortName = Randomizer.String(7),
+                    FullName = Randomizer.String(20),
+                    TeamSize = Randomizer.Int(11, 200),
                 },
             };
         }

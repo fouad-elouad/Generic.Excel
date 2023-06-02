@@ -154,7 +154,7 @@ namespace Generic.Excel.UnitTest
             IDictionary<string, string> dico = new Dictionary<string, string>();
             for (int i = 0; i < 3; i++)
             {
-                dico.Add(randomizer.RandomString(4, 6), randomizer.RandomString(8, 12));
+                dico.Add(randomizer.String(4, 6), randomizer.String(8, 12));
             }
 
             using (ExcelFile excelFile = ExcelFile.Create())
@@ -173,7 +173,7 @@ namespace Generic.Excel.UnitTest
             IDictionary<string, string> dico = new Dictionary<string, string>();
             for (int i = 0; i < 3; i++)
             {
-                dico.Add(randomizer.RandomString(4, 6), randomizer.RandomString(8, 12));
+                dico.Add(randomizer.String(4, 6), randomizer.String(8, 12));
             }
 
             using (ExcelFile excelFile = ExcelFile.Create())
@@ -251,19 +251,19 @@ namespace Generic.Excel.UnitTest
             IList<DateTime> dateTimes = new List<DateTime>();
             for (int i = 0; i < 10; i++)
             {
-                dateTimes.Add(randomizer.RandomDate(new DateTime(2010, 01, 01), new DateTime(2020, 01, 01)));
+                dateTimes.Add(randomizer.Date(new DateTime(2010, 01, 01), new DateTime(2020, 01, 01)));
             }
 
             IList<string> strs = new List<string>();
             for (int i = 0; i < 10; i++)
             {
-                strs.Add(randomizer.RandomString(5, 10));
+                strs.Add(randomizer.String(5, 10));
             }
 
             IList<int> integers = new List<int>();
             for (int i = 0; i < 10; i++)
             {
-                integers.Add(randomizer.Random(0, 100));
+                integers.Add(randomizer.Int(0, 100));
             }
 
             using (ExcelFile excelFile = ExcelFile.Create())
