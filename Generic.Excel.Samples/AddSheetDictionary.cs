@@ -1,7 +1,6 @@
 ﻿using Generic.Excel.Export;
 using Generic.Excel.Samples.Utilities;
 using RandomSharp;
-using System.Collections.Generic;
 
 namespace Generic.Excel.Samples
 {

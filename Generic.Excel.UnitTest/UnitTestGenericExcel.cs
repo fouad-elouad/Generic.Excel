@@ -1,5 +1,4 @@
 ﻿using Generic.Excel.Samples;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Generic.Excel.UnitTest
 {

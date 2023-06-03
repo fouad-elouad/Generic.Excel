@@ -1,8 +1,6 @@
 ﻿using Generic.Excel.Export;
 using Generic.Excel.Samples.Common;
 using Generic.Excel.Samples.Utilities;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Generic.Excel.Samples
 {

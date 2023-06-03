@@ -160,8 +160,8 @@ namespace Generic.Excel.Export
             {
                 foreach (var value in obj.Value)
                 {
-                    workSheet.Cell(rowIndex + startRow, 1).SetValue(obj.Key);
-                    workSheet.Cell(rowIndex + startRow, 2).SetValue(value);
+                    workSheet.Cell(rowIndex + startRow, 1).SetValue(XLCellValue.FromObject(obj.Key));
+                    workSheet.Cell(rowIndex + startRow, 2).SetValue(XLCellValue.FromObject(value));
                     rowIndex++;
                 }
             }
@@ -197,8 +197,8 @@ namespace Generic.Excel.Export
             int rowIndex = 0;
             foreach (var obj in dictionary)
             {
-                workSheet.Cell(rowIndex + startRow, 1).SetValue(obj.Key);
-                workSheet.Cell(rowIndex + startRow, 2).SetValue(obj.Value);
+                workSheet.Cell(rowIndex + startRow, 1).SetValue(XLCellValue.FromObject(obj.Key));
+                workSheet.Cell(rowIndex + startRow, 2).SetValue(XLCellValue.FromObject(obj.Value));
                 rowIndex++;
             }
 
@@ -228,7 +228,7 @@ namespace Generic.Excel.Export
             {
                 for (int cIndex = 0; cIndex < l_propertiesToExport.Count(); cIndex++)
                 {
-                    workSheet.Cell(rowIndex + 2, cIndex + 1).SetValue(obj.GetPropertyValue(l_propertiesToExport[cIndex]));
+                    workSheet.Cell(rowIndex + 2, cIndex + 1).SetValue(XLCellValue.FromObject(obj.GetPropertyValue(l_propertiesToExport[cIndex])));
                 }
                 rowIndex++;
             }
@@ -252,7 +252,7 @@ namespace Generic.Excel.Export
 
             foreach (var item in list)
             {
-                workSheet.Cell(startIndex, 1).SetValue(item);
+                workSheet.Cell(startIndex, 1).SetValue(XLCellValue.FromObject(item));
                 startIndex++;
             }
             if (horizontal)

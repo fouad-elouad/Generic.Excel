@@ -1,7 +1,5 @@
 ﻿using Generic.Excel.Samples.Utilities;
 using RandomSharp;
-using System;
-using System.IO;
 
 namespace Generic.Excel.Samples
 {

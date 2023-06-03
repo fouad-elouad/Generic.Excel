@@ -1,7 +1,5 @@
 ﻿using Generic.Excel.Export;
 using Generic.Excel.Samples.Utilities;
-using System;
-using System.Collections.Generic;
 
 namespace Generic.Excel.Samples
 {

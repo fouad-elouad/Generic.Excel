@@ -9,7 +9,7 @@ The library uses the ExcelPropertyAttribute to decorate model properties, allowi
 and whether they should be ignored or not. It also supports nested properties for referencing other properties.
 
 ## Features
-- [x] Target .NET Framework 4.5.2
+- [x] Target .NET Standard 2.0
 - [x] Generate XLSX files for any .NET type.
 - [x] Decorate model properties with ExcelPropertyAttribute for export customization.
 - [x] Specify display names, order, and ignored properties using attributes.
