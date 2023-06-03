@@ -43,9 +43,15 @@ The attribute provides the following properties:
 Generic.Excel supports nested properties, allowing you to reference and export properties from related models. 
 This is useful when you have complex data structures or relationships between models and want to export them in a structured manner.
 
+### Explicit definition of properties to export
+
+With Generic.Excel, you have control over which properties are included in the export process.
+This allows you to selectively choose the properties you want to export, providing flexibility and customization options based on your specific requirements.
+
 ### Export Direction
-Generic.Excel allows you to control the direction of displayed data in the exported file. 
-By default, data is exported vertically, but you can change the export direction to horizontal using the SetExportDirection method.
+The library gives you the ability to control the direction in which data is displayed in the Excel file.
+By default, data is exported vertically. You can choose between vertical orientation (where each object is displayed in a separate row) or 
+horizontal orientation (where each object is displayed in a separate column).
 
 ### ClosedXML Integration
 Generic.Excel is based on the ClosedXML library, which is a popular and powerful open-source library for working with Excel files in .NET.
@@ -92,18 +98,8 @@ Adding a List of Objects with explicit properties to export:
 
 ### Explicit properties to export and display names
 
-Adding a List of Objects with explicit properties to export and display names, explicit display names override decorator config:
+Adding a List of Objects with explicit properties to export and display names, explicit display names override decorator config.
 
-```csharp
-  List<MyModel> list = GetMyModelList();
-  List<string> propertiesToExport = new List<string> { "Id", "Name", "Description" };
-  List<string> propertiesDisplayName = new List<string> { "ID", "Name", "Description" };
-  excelFile.AddSheetList(list, "Sheet1", propertiesToExport, propertiesDisplayName);
-```
-
-### Explicit properties to export and display names
-
-Adding a List of Objects with explicit properties to export and display names:
 If you want to export specific properties and define custom display names, use the AddSheetList method with propertiesToExport and propertiesDisplayName parameters:
 
 ```csharp
@@ -189,7 +185,7 @@ Here's an example of using the ExcelPropertyAttribute::
         [ExcelProperty("Description", order: 4, ignore: true)]
         public string Description { get; set; }
 
-        [ExcelProperty("Nested Property Name", order: 2, nestedProperty: "NestedProperty.Name")]
+        [ExcelProperty("Nested Property Name", order: 2, nestedProperty: "FullName")]
         public NestedModel NestedProperty { get; set; }
 
     }
@@ -219,6 +215,10 @@ Without the using {} declatation, it is important to release the resources used 
 ```csharp
   excelFile.Dispose();
 ```
+
+## RandomSharp Project
+
+A lightweight random data generator for .NET.
 
 ## Support
 If you are having problems, please let us know by [raising a new issue](https://github.com/fouad-elouad/Generic.Excel/issues/new/choose).
