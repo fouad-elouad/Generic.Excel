@@ -49,16 +49,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Department.cs" />
-    <Compile Include="Models\Employee.cs" />
     <Compile Include="UnitTestGenericExcel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilities\DataFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Generic.Excel.Samples\Generic.Excel.Samples.csproj">
+      <Project>{C68D1AF8-6D46-4DC2-8E34-31B57639732F}</Project>
+      <Name>Generic.Excel.Samples</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Generic.Excel\Generic.Excel.csproj">
       <Project>{90112734-46CA-4236-B841-19407C56938A}</Project>
       <Name>Generic.Excel</Name>

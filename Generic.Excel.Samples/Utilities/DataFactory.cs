@@ -1,9 +1,9 @@
-﻿using Generic.Excel.UnitTest.Models;
+﻿using Generic.Excel.Samples.Common;
 using RandomSharp;
 using System;
 using System.Collections.Generic;
 
-namespace Generic.Excel.UnitTest.Utilities
+namespace Generic.Excel.Samples.Utilities
 {
     public class DataFactory
     {

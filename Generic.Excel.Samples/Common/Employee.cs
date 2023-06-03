@@ -1,7 +1,7 @@
 ﻿using Generic.Excel.Export;
 using System;
 
-namespace Generic.Excel.UnitTest.Models
+namespace Generic.Excel.Samples.Common
 {
     public class Employee
     {
@@ -35,7 +35,7 @@ namespace Generic.Excel.UnitTest.Models
 
         public MaritalStatus? MaritalStatus { get; set; }
 
-        [ExcelProperty("Department ShortName", 5, nameof(Models.Department.ShortName))]
+        [ExcelProperty("Department ShortName", 5, nameof(Common.Department.ShortName))]
         public Department Department { get; set; }
     }
 

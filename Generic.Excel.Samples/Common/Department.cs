@@ -1,4 +1,4 @@
-﻿namespace Generic.Excel.UnitTest.Models
+﻿namespace Generic.Excel.Samples.Common
 {
     public class Department
     {
