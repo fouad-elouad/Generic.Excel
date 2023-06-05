@@ -2,7 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Generic.Excel</PackageId>
+    <Title>Generic.Excel</Title>
+    <Version>1.0.0</Version>
+    <Authors>Fouad ELOUAD</Authors>
+    <Company>Fouad ELOUAD</Company>
+    <Product>Generic.Excel</Product>
+    <Description>A .NET class library that provides a convenient and flexible way to generate .xlsx files for any .NET type. With the ability to customize property export, you can easily export data to Excel with ease. </Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/fouad-elouad/Generic.Excel</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ClosedXML" Version="0.101.0" />
