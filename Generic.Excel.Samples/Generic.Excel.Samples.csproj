@@ -8,8 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="RandomSharp" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Generic.Excel\Generic.Excel.csproj" />
-    <ProjectReference Include="..\RandomSharp\RandomSharp.csproj" />
   </ItemGroup>
 
 </Project>
