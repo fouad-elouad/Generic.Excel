@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RandomSharp, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RandomSharp.0.9.0\lib\net452\RandomSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -67,15 +70,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Generic.Excel\Generic.Excel.csproj">
       <Project>{90112734-46CA-4236-B841-19407C56938A}</Project>
       <Name>Generic.Excel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RandomSharp\RandomSharp.csproj">
-      <Project>{8675efc8-871f-41cb-b608-3cb31924b35f}</Project>
-      <Name>RandomSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

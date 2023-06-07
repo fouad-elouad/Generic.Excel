@@ -64,10 +64,6 @@
       <Project>{90112734-46CA-4236-B841-19407C56938A}</Project>
       <Name>Generic.Excel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RandomSharp\RandomSharp.csproj">
-      <Project>{8675EFC8-871F-41CB-B608-3CB31924B35F}</Project>
-      <Name>RandomSharp</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

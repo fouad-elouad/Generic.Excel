@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic.Excel", "Generic.Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic.Excel.UnitTest", "Generic.Excel.UnitTest\Generic.Excel.UnitTest.csproj", "{E0CD15DC-105D-4C42-B698-C0AD2E9A61B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomSharp", "RandomSharp\RandomSharp.csproj", "{8675EFC8-871F-41CB-B608-3CB31924B35F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic.Excel.Samples", "Generic.Excel.Samples\Generic.Excel.Samples.csproj", "{C68D1AF8-6D46-4DC2-8E34-31B57639732F}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{E0CD15DC-105D-4C42-B698-C0AD2E9A61B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0CD15DC-105D-4C42-B698-C0AD2E9A61B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0CD15DC-105D-4C42-B698-C0AD2E9A61B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8675EFC8-871F-41CB-B608-3CB31924B35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8675EFC8-871F-41CB-B608-3CB31924B35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8675EFC8-871F-41CB-B608-3CB31924B35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8675EFC8-871F-41CB-B608-3CB31924B35F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C68D1AF8-6D46-4DC2-8E34-31B57639732F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C68D1AF8-6D46-4DC2-8E34-31B57639732F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C68D1AF8-6D46-4DC2-8E34-31B57639732F}.Release|Any CPU.ActiveCfg = Release|Any CPU

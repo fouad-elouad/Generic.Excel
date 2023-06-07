@@ -1,6 +1,7 @@
 ﻿using Generic.Excel.Export;
 using Generic.Excel.Samples.Utilities;
 using RandomSharp;
+using RandomSharp.Impl;
 using System;
 using System.Collections.Generic;
 
@@ -19,7 +20,7 @@ namespace Generic.Excel.Samples
 
         public override void Run()
         {
-            IRandomizer randomizer = new Randomizer();
+            IRandomizer randomizer = new DefaultRandomizer();
             IList<DateTime> dateTimes = new List<DateTime>();
             for (int i = 0; i < 10; i++)
             {
