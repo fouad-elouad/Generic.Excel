@@ -1,5 +1,6 @@
 ﻿using Generic.Excel.Samples.Utilities;
 using RandomSharp;
+using RandomSharp.Impl;
 
 namespace Generic.Excel.Samples
 {
@@ -15,7 +16,7 @@ namespace Generic.Excel.Samples
 
         public SampleBase()
         {
-            Randomizer randomizer = new Randomizer();
+            IRandomizer randomizer = new DefaultRandomizer();
             _DataFactory = new DataFactory(randomizer);
         }
 

@@ -1,6 +1,7 @@
 ﻿using Generic.Excel.Export;
 using Generic.Excel.Samples.Utilities;
 using RandomSharp;
+using RandomSharp.Impl;
 
 namespace Generic.Excel.Samples
 {
@@ -17,7 +18,7 @@ namespace Generic.Excel.Samples
 
         public override void Run()
         {
-            IRandomizer randomizer = new Randomizer();
+            IRandomizer randomizer = new DefaultRandomizer();
             IDictionary<string, string> dico = new Dictionary<string, string>();
             for (int i = 0; i < 3; i++)
             {
